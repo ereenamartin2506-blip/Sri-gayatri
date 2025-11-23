@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Gayatri Junior College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo2.png">
+</head>
+<body>
+   <header style="background-color: rgb(254, 4, 4); display: flex; align-items: center; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="logo2.png" style="width:100px; height:100px;flex-shrink: 0;">
+    <div style="text-align: center; width: 100%; white-space: nowrap;">
+      <h1>SRI GAYATRI</h1>
+      <h2>EDUCATIONAL INSTITUTIONS</h2>
+      <h3>Visakhapatnam &lt; Gajuwaka &lt; NAD &lt; Madhurwada &lt; Kommadi</h3> 
+    </div>  
+   </header>
+
+   <span>A Traditional Training For talent Hunt</span>
+   
+   <button class="center-btn" onclick="toggleOptions()">
+      select branches
+   </button>
+
+   <div id="branch-options" aria-hidden="true" style="display:none;">
+      <button class="branch-option butchirajpalem" onclick="location.href='butchirajpalem.html'">Butchirajpalem</button>
+      <button class="branch-option gajuwaka" onclick="location.href='gajuwaka.html'">Gajuwaka</button>
+      <button class="branch-option asilmetta" onclick="location.href='asilmetta.html'">Asilmetta</button>
+      <button class="branch-option kommadi" onclick="location.href='kommadi.html'">Kommadi</button>
+   </div>
+
+   <script>
+      function toggleOptions() {
+        const panel = document.getElementById('branch-options');
+        const isShown = panel.style.display === 'block';
+        panel.style.display = isShown ? 'none' : 'block';
+        panel.setAttribute('aria-hidden', String(isShown));
+      }
+      </script>
+
+   <main>
+     <section>
+       <h1 style="color:rgb(5, 5, 5); font-size: 2em; background-color: rgb(241, 11, 49);">Our Branches</h1>
+       <p>We have four branches in Visakhapatnam:</p>
+       <ol>
+         <li style="font-size: 20px;">Butchirajpalem - Located beside HDFC bank</li>
+         <li style="font-size: 20px;">Gajuwaka - Located near RTC bus stand</li>
+         <li style="font-size: 20px;">Asilmetta - Located near Jagadamba Theatre</li>
+         <li style="font-size: 20px;">Kommadi - Located in Kommadi area</li>
+       </ol>
+
+       <div>
+        <h3 style="color:rgb(254, 7, 7); font-size: 2em; background-color: rgb(250, 248, 248);">Courses Offered</h3>
+        
+        <h4>MPC</h4>
+        <ul>
+          <li style="background-color: rgb(255, 94, 0); color: antiquewhite;">HIGH ACHIEVERS-JR Lakshya</li>
+          <li>JEE-IIT/NEET coaching integrated with regular intermediate classes</li>
+          <li style="background-color: rgb(255, 94, 0); color: antiquewhite;">Regular-JR Inspire</li>
+          <li>EAPCET with Regular intermediate classes</li>
+        </ul>
+ 
+        <h4>BiPC</h4>
+        <ul>
+          <li style="background-color: rgb(255, 94, 0); color: antiquewhite;">HIGH ACHIEVERS-JR Lakshya</li>
+          <li>NEET coaching integrated with regular intermediate classes</li>
+        </ul>
+
+        <h4>CEC/MEC/HEC</h4>  
+        <ul>
+          <li style="background-color: rgb(255, 94, 0); color: antiquewhite;">CEC/HEC/MEC</li>
+          <li>Regular intermediate classes for CEC/MEC/HEC</li>
+        </ul>
+       </div>
+     </section>
+   </main>
+
+   <img src="main logo.png" style="width:200px; height:auto;">
+   <p style="font-size: 18px;">Join Sri Gayatri to ensure your bright future. The top leading college in Visakhapatnam.</p>
+   <p style="font-size:22px; font-family: Arial, Helvetica, sans-serif;">
+      All four branches are well equipped with good facilities. We provide quality education to our students. We have experienced faculty members and a good track record of results. So what are you waiting for? Join us now. Select your branch and secure your future. Each branch has its own contact details. Click on the button above to select your branch and get more information.
+   </p>
+
+   <footer>
+      <div>Created by Erram Kingson</div>
+      <div>Student of Sri Gayatri Junior College Butchirajpalem</div>
+      <div>2025 &copy; all rights reserved</div>
+   </footer>
+</body>
+</html>
+
+
